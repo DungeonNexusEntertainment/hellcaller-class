@@ -48,7 +48,6 @@ values are applied at summon time:
 | Thrall | + your CHA mod | + your PB | + your PB |
 | Warden | + your CHA mod | + your PB | + your PB |
 | Sovereign Demon | — | — | + your CHA mod | 
-{See sheet for sovereign details}
 
 ## Known deviations and manual bits
 
