@@ -16,35 +16,20 @@ half-caster who spends **Malice** to summon and command demonic **Thralls**.
 
 ## Installation
 
-**Option A — install the module (recommended)**
+### Option A: install via manifest URL (recommended)
 
-1. Unzip `hellcaller-class.zip` into your Foundry data folder's `modules` directory, so you end up with:
-   `.../FoundryVTT/Data/modules/hellcaller-class/module.json`
-2. Restart Foundry, then enable **The Hellcaller** in *Manage Modules* inside your world.
+1. In Foundry: **Add-on Modules → Install Module**
+2. Paste into **Manifest URL**:
+   `https://github.com/DungeonNexusEntertainment/hellcaller-class/releases/latest/download/module.json`
+3. Click **Install**, then enable **The Hellcaller** in *Manage Modules*.
 
-**Option B — import the raw documents**
+**Option B: import the raw documents**
 
 `packs/_source/` contains every document as plain JSON. Create a compendium in your world and use
 *Import Data* on individual files, or drag them in. Useful if you'd rather not run a module, but you
 lose the pre-wired compendium links between the class, its features, and the summon statblocks.
 
 ## How it works
-
-**Spellcasting.** The Hellcaller slot table is a near-exact match for dnd5e's built-in `artificer`
-progression — a half caster rounded up, granting slots from level 1.
-
-Two cells in the revised table do **not** match that progression:
-
-| Level | Table says | Artificer gives |
-|---|---|---|
-| 2 | 3 first-level slots | 2 |
-| 11 | 2 third-level slots | 3 |
-
-dnd5e exposes no custom slot-table option for classes (`progression` must be one of
-none/full/half/third/pact/artificer), so these two cells cannot be reproduced exactly without a
-custom progression registered by a script. The build prints them as warnings on every run so the gap
-stays visible. Note that the earlier PDF matched artificer at both cells and the two deviations run
-in opposite directions, so they may be transcription slips rather than intent.
 
 **Scale values.** Prepared spells, cantrips known, Malice, and Max Thralls are all `ScaleValue`
 advancements on the class, so they update automatically as you level. They're referenceable in
@@ -62,7 +47,7 @@ values are applied at summon time:
 |---|---|---|---|
 | Thrall | + your CHA mod | + your PB | + your PB |
 | Warden | + your CHA mod | + your PB | + your PB |
-| Sovereign Demon | — | — | + your CHA mod |
+| Sovereign Demon | — | — | + your CHA mod | {See sheet}
 
 ## Known deviations and manual bits
 
