@@ -1,0 +1,5 @@
+2026/07/22-21:37:22.289 882c Delete type=3 #1
+2026/07/22-21:37:22.296 2ccc Level-0 table #5: started
+2026/07/22-21:37:22.304 2ccc Level-0 table #5: 51888 bytes OK
+2026/07/22-21:37:22.310 2ccc Delete type=0 #3
+2026/07/22-21:37:22.310 2ccc Manual compaction at level-0 from '!items!hcBwDemonicEndur' @ 72057594037927935 : 1 .. '!items!hcSwUnrelentTide' @ 0 : 0; will stop at (end)

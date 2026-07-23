@@ -1,0 +1,90 @@
+{
+  "id": "hellcaller-class",
+  "title": "The Hellcaller",
+  "description": "A playable Hellcaller class for the D&D 5e (2024) system: a Charisma-based half-caster who spends Malice to summon and command demonic Thralls. Includes the class, three subclasses, all class features, six original spells, and summonable Thrall, Warden, and Sovereign Demon statblocks.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Dungeon Nexus Entertainment"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+        "compatibility": {
+          "minimum": "5.0.0",
+          "verified": "5.2.0"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "hellcaller-items",
+      "label": "Hellcaller Content",
+      "path": "packs/hellcaller-items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "class",
+            "subclass",
+            "feat",
+            "spell"
+          ]
+        }
+      }
+    },
+    {
+      "name": "hellcaller-actors",
+      "label": "Hellcaller Summons",
+      "path": "packs/hellcaller-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "hellcaller-journals",
+      "label": "Hellcaller Reference",
+      "path": "packs/hellcaller-journals",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "The Hellcaller",
+      "sorting": "m",
+      "color": "#7a1220",
+      "packs": [
+        "hellcaller-items",
+        "hellcaller-actors",
+        "hellcaller-journals"
+      ]
+    }
+  ],
+   "url": "https://github.com/DungeonNexusEntertainment/hellcaller-class",
+  "manifest": "https://github.com/DungeonNexusEntertainment/hellcaller-class/releases/latest/download/module.json",
+  "download": "https://github.com/DungeonNexusEntertainment/hellcaller-class/releases/latest/download/module.zip",
+  "license": "LICENSE.txt"
+}
